@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.wi1024.com/"/>
-  <updated>2018-01-30T12:30:24.950Z</updated>
+  <updated>2018-02-03T14:30:35.638Z</updated>
   <id>http://blog.wi1024.com/</id>
   
   <author>
@@ -17,23 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>星辰大海</title>
-    <link href="http://blog.wi1024.com/2017/10/25/journey/"/>
-    <id>http://blog.wi1024.com/2017/10/25/journey/</id>
-    <published>2017-10-25T13:18:12.000Z</published>
-    <updated>2018-01-30T12:30:24.950Z</updated>
+    <title>程序员如何成为自由职业者</title>
+    <link href="http://blog.wi1024.com/2018/02/03/freelancer/"/>
+    <id>http://blog.wi1024.com/2018/02/03/freelancer/</id>
+    <published>2018-02-03T13:48:45.000Z</published>
+    <updated>2018-02-03T14:30:35.638Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;&lt;p&gt;我不去想是否能够成功&lt;br&gt;既然选择了远方&lt;br&gt;便只顾风雨兼程&lt;br&gt;我不去想能否赢得爱情&lt;br&gt;既然钟情于玫瑰&lt;br&gt;就勇敢地吐露真诚&lt;br&gt;我不去想身后会不会袭来寒风冷雨&lt;br&gt;既然目标是地平线&lt;br&gt;留给世界的只能是背影&lt;br&gt;我不去想未来是平坦还是泥泞&lt;br&gt;只要热爱生命一切&lt;br&gt;都在意料之中&lt;/p&gt;
+      &lt;blockquote&gt;&lt;p&gt;你作为一个开发者，会有另一半，买房还贷，建立家庭，你会有孩子，一日五六餐嗷嗷吃钱，你还需要赡养老人，你需要越来越多的钱，才能凑凑合合地安排好你的生活。然而虽然你技术越来越好，贡献越来越大，客户却始终是老板的，而老板却要控制成本，万万不能给你越来越多的钱，他始终要把你框在预算之内。甚至，当你老了，精力、能力、干劲都开始走下坡路，他还会觉得你性价比不如那些年轻敢拼肯加班的新人高，于是你又得为地位不保失业在即而焦虑。&lt;/p&gt;
+&lt;p&gt;时间永是流逝，生活依然继续，你需要更多的时间、金钱来扮演好丈夫（妻子）、父亲（母亲）、儿子（女儿）、女婿（媳妇）等各种角色，固定的薪水，朝九晚五的节奏，很快都成了羁绊。于是，你开始向往“想干什么干什么，想怎么赚钱怎么赚钱，想赚多少赚多少”的生活，自由职业成了你倍感兴趣的选择。&lt;/p&gt;
+&lt;p&gt;那么，问题来了：作为一名开发者，该如何走向自由职业呢？&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
-      <category term="生活" scheme="http://blog.wi1024.com/source/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="职业" scheme="http://blog.wi1024.com/source/categories/%E8%81%8C%E4%B8%9A/"/>
     
     
-      <category term="生活" scheme="http://blog.wi1024.com/source/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="编程" scheme="http://blog.wi1024.com/source/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
