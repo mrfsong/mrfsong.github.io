@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="software, develop , mrfsong" />
+  <meta name="keywords" content="ElasticSearch," />
 
 
 
@@ -81,16 +81,18 @@
 
 
 
-<meta name="description" content="位置不能带来自由，能力才能让人自由。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="读万卷书，行万里路">
-<meta property="og:url" content="http://blog.wi1024.com/index.html">
+<meta name="description" content="ElasticSearch搜索引擎原理总结">
+<meta name="keywords" content="ElasticSearch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="elasticsearch集群原理">
+<meta property="og:url" content="http://blog.wi1024.com/2018/04/01/es_cluster/index.html">
 <meta property="og:site_name" content="读万卷书，行万里路">
-<meta property="og:description" content="位置不能带来自由，能力才能让人自由。">
+<meta property="og:description" content="ElasticSearch搜索引擎原理总结">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-02T14:48:08.455Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="读万卷书，行万里路">
-<meta name="twitter:description" content="位置不能带来自由，能力才能让人自由。">
+<meta name="twitter:title" content="elasticsearch集群原理">
+<meta name="twitter:description" content="ElasticSearch搜索引擎原理总结">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.wi1024.com/"/>
+  <link rel="canonical" href="http://blog.wi1024.com/2018/04/01/es_cluster/"/>
 
 
 
 
 
-  <title>读万卷书，行万里路</title>
+  <title>elasticsearch集群原理 | 读万卷书，行万里路</title>
   
 
 
@@ -145,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -283,9 +284,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -315,9 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/01/es_cluster/" itemprop="url">elasticsearch集群原理</a></h1>
+          <h1 class="post-title" itemprop="name headline">elasticsearch集群原理</h1>
         
 
         <div class="post-meta">
@@ -371,155 +370,13 @@
           
 
           
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote><p>ElasticSearch搜索引擎原理总结</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/01/es_cluster/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wi1024.com/2018/03/18/local_cache/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="读万卷书，行万里路">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/18/local_cache/" itemprop="url">本地缓存实现总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-18T12:03:58+08:00">
-                2018-03-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/source/categories/缓存/" itemprop="url" rel="index">
-                    <span itemprop="name">缓存</span>
-                  </a>
-                </span>
-
-                
-                
-              
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
             </span>
           
 
           
-            
-          
-
-          
-          
-
-          
-
-          
 
           
 
@@ -536,17 +393,25 @@
       
 
       
-        
-          <blockquote><p>在软件系统基础架构中，缓存已经成为了一个非常重要的部分，随着历年存储成本的不断下降，基于硬件资源换取系统性能成为了一种『简单粗暴』、但成效显著的方案。<br>在很多的大型分布式系统中，为了满足业务、性能上的各种要求，往往采用多级缓存的设计，来更好的满足不断增长的业务需求。在JAVA领域中，Guava本地缓存是一种比较主流、广泛应用的方案。</p>
+        <blockquote><p>ElasticSearch搜索引擎原理总结</p>
 </blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/18/local_cache/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+<h2 id="ElasticSearch的几种节点类型"><a href="#ElasticSearch的几种节点类型" class="headerlink" title="ElasticSearch的几种节点类型"></a>ElasticSearch的几种节点类型</h2><ol>
+<li>Master Eligible Node （候选主节点）：设置成node.master=true (default)都可能会被选举为主节点；</li>
+<li>Master Node （主节点）：由候选主节点选举出来的，负责管理 ES 集群，通过广播的机制与其他节点维持关系，负责集群中的 DDL 操作（创建/删除索引），管理其他节点上的分片（shard）；</li>
+<li>Data Node（数据节点）：很好理解，存放数据的节点，负责数据的增删改查 CRUD；</li>
+<li>Ingest Node（提取节点）：能执行预处理管道，有自己独立的任务要执行，类似于 logstash 的功能，不负责数据也不负责集群相关的事务；</li>
+<li>Tribe Node（部落节点）：协调集群与集群之间的节点；</li>
+<li>Coordinating Node(协调节点)：每一个节点都是一个潜在的协调节点，且不能被禁用，协调节点最大的作用就是将各个分片里的数据汇集起来一并返回给客户端，因此 ES 的节点需要有足够的 CPU 和内存去处理协调节点的 gather 阶段</li>
+</ol>
+<h2 id="ElasticSearch集群启动过程"><a href="#ElasticSearch集群启动过程" class="headerlink" title="ElasticSearch集群启动过程"></a>ElasticSearch集群启动过程</h2><h2 id="ElasticSearch-Gateway模块"><a href="#ElasticSearch-Gateway模块" class="headerlink" title="ElasticSearch Gateway模块"></a>ElasticSearch Gateway模块</h2><p>gateway模块用于存储es集群的元数据信息。这部分信息主要包括所有的索引连同索引设置和显式的mapping信息。集群元数据的每一次改变（比如增加删除索引等），这些信息都要通过gateway模块进行持久化。当集群第一次启动的时候，这些信息就会从gateway模块中读出并应用。<br>设置在node级别上的gateway会自动控制索引所用的gateway。比如设置了local gataway，则每一个在这个node上创建的index都会应用他们在索引级别的local gateway。如果索引不需要持久化状态，需要显式的设置为none（这也是唯一可以设置的值）。默认的gateway设置是local gateway。</p>
+<h2 id="ElasticSearch文档（Type）更新过程"><a href="#ElasticSearch文档（Type）更新过程" class="headerlink" title="ElasticSearch文档（Type）更新过程"></a>ElasticSearch文档（Type）更新过程</h2><p>协调节点负责创建索引,转发请求到主分片节点,等待响应,回复客户端</p>
+<p>路径:action.index.TransportIndexAction#doExecute<br>检查索引是否存在,如果不存在,且允许自动创建索引,就创建他</p>
+<p>创建索引请求被发送到 master, 直到收到其 Response 之后,进入写doc操作主逻辑.master 什么时候返回Response? 在 master 执行完创建索引流程,将新的 clusterState 发布完毕后才会返回.那什么才算发布完毕呢?默认情况下,master 发布 clusterState 的 Request 收到半数以上的节点 Response, 认为发布成功.负责写数据的节点会先走一遍内容路由的过程已处理没有收到最新 clusterState 的情况.</p>
+<!-- <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"></div></pre></td></tr></table></figure> –&gt;
+<p><em>To be continued</em></p>
+<hr>
+-->
       
     </div>
     
@@ -556,168 +421,70 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpeg" alt="felix 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpeg" alt="felix 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.wi1024.com/2018/02/03/freelancer/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="felix">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="读万卷书，行万里路">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/03/freelancer/" itemprop="url">程序员如何成为自由职业者</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-03T21:48:45+08:00">
-                2018-02-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/source/categories/职业/" itemprop="url" rel="index">
-                    <span itemprop="name">职业</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/source/tags/ElasticSearch/" rel="tag"># ElasticSearch</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <blockquote><p>你作为一个开发者，会有另一半，买房还贷，建立家庭，你会有孩子，一日五六餐嗷嗷吃钱，你还需要赡养老人，你需要越来越多的钱，才能凑凑合合地安排好你的生活。然而虽然你技术越来越好，贡献越来越大，客户却始终是老板的，而老板却要控制成本，万万不能给你越来越多的钱，他始终要把你框在预算之内。甚至，当你老了，精力、能力、干劲都开始走下坡路，他还会觉得你性价比不如那些年轻敢拼肯加班的新人高，于是你又得为地位不保失业在即而焦虑。</p>
-<p>时间永是流逝，生活依然继续，你需要更多的时间、金钱来扮演好丈夫（妻子）、父亲（母亲）、儿子（女儿）、女婿（媳妇）等各种角色，固定的薪水，朝九晚五的节奏，很快都成了羁绊。于是，你开始向往“想干什么干什么，想怎么赚钱怎么赚钱，想赚多少赚多少”的生活，自由职业成了你倍感兴趣的选择。</p>
-<p>那么，问题来了：作为一名开发者，该如何走向自由职业呢？</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/03/freelancer/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/18/local_cache/" rel="next" title="本地缓存实现总结">
+                <i class="fa fa-chevron-left"></i> 本地缓存实现总结
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -727,10 +494,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -738,6 +506,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -758,8 +530,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -860,6 +641,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ElasticSearch的几种节点类型"><span class="nav-number">1.</span> <span class="nav-text">ElasticSearch的几种节点类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ElasticSearch集群启动过程"><span class="nav-number">2.</span> <span class="nav-text">ElasticSearch集群启动过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ElasticSearch-Gateway模块"><span class="nav-number">3.</span> <span class="nav-text">ElasticSearch Gateway模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ElasticSearch文档（Type）更新过程"><span class="nav-number">4.</span> <span class="nav-text">ElasticSearch文档（Type）更新过程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1020,6 +817,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1451,13 +1252,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/zh-tw/docs/variables.html
-      var isPost = ''.length > 0
+      var isPost = 'elasticsearch集群原理'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = ''
+        var title = 'elasticsearch集群原理'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))
@@ -1465,7 +1266,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("elasticsearch集群原理");titles.push("本地缓存实现总结");titles.push("程序员如何成为自由职业者");' //if you have a better way to get titles of posts, please change it
+        var postsstr = '' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
@@ -1505,26 +1306,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
