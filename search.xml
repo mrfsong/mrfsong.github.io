@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[elasticsearch集群原理]]></title>
     <url>%2F2018%2F04%2F01%2Fes_cluster%2F</url>
-    <content type="text"><![CDATA[ElasticSearch搜索引擎原理总结 ElasticSearch的几种节点类型 Master Eligible Node （候选主节点）：设置成node.master=true (default)都可能会被选举为主节点； Master Node （主节点）：由候选主节点选举出来的，负责管理 ES 集群，通过广播的机制与其他节点维持关系，负责集群中的 DDL 操作（创建/删除索引），管理其他节点上的分片（shard）； Data Node（数据节点）：很好理解，存放数据的节点，负责数据的增删改查 CRUD； Ingest Node（提取节点）：能执行预处理管道，有自己独立的任务要执行，类似于 logstash 的功能，不负责数据也不负责集群相关的事务； Tribe Node（部落节点）：协调集群与集群之间的节点； Coordinating Node(协调节点)：每一个节点都是一个潜在的协调节点，且不能被禁用，协调节点最大的作用就是将各个分片里的数据汇集起来一并返回给客户端，因此 ES 的节点需要有足够的 CPU 和内存去处理协调节点的 gather 阶段 ElasticSearch集群启动过程ElasticSearch Gateway模块gateway模块用于存储es集群的元数据信息。这部分信息主要包括所有的索引连同索引设置和显式的mapping信息。集群元数据的每一次改变（比如增加删除索引等），这些信息都要通过gateway模块进行持久化。当集群第一次启动的时候，这些信息就会从gateway模块中读出并应用。设置在node级别上的gateway会自动控制索引所用的gateway。比如设置了local gataway，则每一个在这个node上创建的index都会应用他们在索引级别的local gateway。如果索引不需要持久化状态，需要显式的设置为none（这也是唯一可以设置的值）。默认的gateway设置是local gateway。 ElasticSearch文档（Type）更新过程协调节点负责创建索引,转发请求到主分片节点,等待响应,回复客户端 路径:action.index.TransportIndexAction#doExecute检查索引是否存在,如果不存在,且允许自动创建索引,就创建他 创建索引请求被发送到 master, 直到收到其 Response 之后,进入写doc操作主逻辑.master 什么时候返回Response? 在 master 执行完创建索引流程,将新的 clusterState 发布完毕后才会返回.那什么才算发布完毕呢?默认情况下,master 发布 clusterState 的 Request 收到半数以上的节点 Response, 认为发布成功.负责写数据的节点会先走一遍内容路由的过程已处理没有收到最新 clusterState 的情况.]]></content>
+    <content type="text"><![CDATA[ElasticSearch搜索引擎原理总结 ElasticSearch的几种节点类型 Master Eligible Node （候选主节点）：设置成node.master=true (default)都可能会被选举为主节点； Master Node （主节点）：由候选主节点选举出来的，负责管理 ES 集群，通过广播的机制与其他节点维持关系，负责集群中的 DDL 操作（创建/删除索引），管理其他节点上的分片（shard）； Data Node（数据节点）：很好理解，存放数据的节点，负责数据的增删改查 CRUD； Ingest Node（提取节点）：能执行预处理管道，有自己独立的任务要执行，类似于 logstash 的功能，不负责数据也不负责集群相关的事务； Tribe Node（部落节点）：协调集群与集群之间的节点； Coordinating Node(协调节点)：每一个节点都是一个潜在的协调节点，且不能被禁用，协调节点最大的作用就是将各个分片里的数据汇集起来一并返回给客户端，因此 ES 的节点需要有足够的 CPU 和内存去处理协调节点的 gather 阶段 ElasticSearch集群启动过程ElasticSearch Gateway模块gateway模块用于存储es集群的元数据信息。这部分信息主要包括所有的索引连同索引设置和显式的mapping信息。集群元数据的每一次改变（比如增加删除索引等），这些信息都要通过gateway模块进行持久化。当集群第一次启动的时候，这些信息就会从gateway模块中读出并应用。设置在node级别上的gateway会自动控制索引所用的gateway。比如设置了local gataway，则每一个在这个node上创建的index都会应用他们在索引级别的local gateway。如果索引不需要持久化状态，需要显式的设置为none（这也是唯一可以设置的值）。默认的gateway设置是local gateway。 ElasticSearch文档（Type）更新过程协调节点负责创建索引,转发请求到主分片节点,等待响应,回复客户端 路径:action.index.TransportIndexAction#doExecute检查索引是否存在,如果不存在,且允许自动创建索引,就创建他 创建索引请求被发送到 master, 直到收到其 Response 之后,进入写doc操作主逻辑.master 什么时候返回Response? 在 master 执行完创建索引流程,将新的 clusterState 发布完毕后才会返回.那什么才算发布完毕呢?默认情况下,master 发布 clusterState 的 Request 收到半数以上的节点 Response, 认为发布成功.负责写数据的节点会先走一遍内容路由的过程已处理没有收到最新 clusterState 的情况. To be continued]]></content>
       <categories>
         <category>大数据</category>
       </categories>
@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[本地缓存实现总结]]></title>
     <url>%2F2018%2F03%2F18%2Flocal_cache%2F</url>
-    <content type="text"><![CDATA[在软件系统基础架构中，缓存已经成为了一个非常重要的部分，随着历年存储成本的不断下降，基于硬件资源换取系统性能成为了一种『简单粗暴』、但成效显著的方案。在很多的大型分布式系统中，为了满足业务、性能上的各种要求，往往采用多级缓存的设计，来更好的满足不断增长的业务需求。在JAVA领域中，Guava本地缓存是一种比较主流、广泛应用的方案。 GuavaCaffeineEhcache]]></content>
+    <content type="text"><![CDATA[在软件系统基础架构中，缓存已经成为了一个非常重要的部分，随着历年存储成本的不断下降，基于硬件资源换取系统性能成为了一种『简单粗暴』、但成效显著的方案。在很多的大型分布式系统中，为了满足业务、性能上的各种要求，往往采用多级缓存的设计，来更好的满足不断增长的业务需求。在JAVA领域中，Guava本地缓存是一种比较主流、广泛应用的方案。 GuavaCaffeineEhcache To be continued]]></content>
       <categories>
         <category>缓存</category>
       </categories>

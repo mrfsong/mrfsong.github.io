@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="读万卷书，行万里路">
 <meta property="og:description" content="ElasticSearch搜索引擎原理总结">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-02T14:48:08.455Z">
+<meta property="og:updated_time" content="2018-04-02T15:06:46.671Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="elasticsearch集群原理">
 <meta name="twitter:description" content="ElasticSearch搜索引擎原理总结">
@@ -408,9 +408,10 @@
 <h2 id="ElasticSearch文档（Type）更新过程"><a href="#ElasticSearch文档（Type）更新过程" class="headerlink" title="ElasticSearch文档（Type）更新过程"></a>ElasticSearch文档（Type）更新过程</h2><p>协调节点负责创建索引,转发请求到主分片节点,等待响应,回复客户端</p>
 <p>路径:action.index.TransportIndexAction#doExecute<br>检查索引是否存在,如果不存在,且允许自动创建索引,就创建他</p>
 <p>创建索引请求被发送到 master, 直到收到其 Response 之后,进入写doc操作主逻辑.master 什么时候返回Response? 在 master 执行完创建索引流程,将新的 clusterState 发布完毕后才会返回.那什么才算发布完毕呢?默认情况下,master 发布 clusterState 的 Request 收到半数以上的节点 Response, 认为发布成功.负责写数据的节点会先走一遍内容路由的过程已处理没有收到最新 clusterState 的情况.</p>
-<!-- <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"></div></pre></td></tr></table></figure> –&gt;
+<hr>
 <p><em>To be continued</em></p>
 <hr>
+<!-- <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"></div></pre></td></tr></table></figure> –&gt;
 -->
       
     </div>
