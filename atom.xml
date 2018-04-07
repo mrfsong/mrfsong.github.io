@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.wi1024.com/"/>
-  <updated>2018-04-02T15:06:46.671Z</updated>
+  <updated>2018-04-07T13:51:35.279Z</updated>
   <id>http://blog.wi1024.com/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【JAVA回顾】匿名内部类</title>
+    <link href="http://blog.wi1024.com/2018/04/07/anonymous-inner-class/"/>
+    <id>http://blog.wi1024.com/2018/04/07/anonymous-inner-class/</id>
+    <published>2018-04-07T13:48:35.000Z</published>
+    <updated>2018-04-07T13:51:35.279Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;JAVA匿名内部类用法&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程" scheme="http://blog.wi1024.com/source/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="JAVA" scheme="http://blog.wi1024.com/source/tags/JAVA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【JAVA回顾】final关键字</title>
+    <link href="http://blog.wi1024.com/2018/04/07/java-final/"/>
+    <id>http://blog.wi1024.com/2018/04/07/java-final/</id>
+    <published>2018-04-07T13:20:29.000Z</published>
+    <updated>2018-04-07T13:49:13.258Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;JAVA关键字之FINAL用法&amp;amp;总结&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程" scheme="http://blog.wi1024.com/source/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="JAVA" scheme="http://blog.wi1024.com/source/tags/JAVA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【JAVA回顾】STATIC关键字</title>
+    <link href="http://blog.wi1024.com/2018/04/07/java-static/"/>
+    <id>http://blog.wi1024.com/2018/04/07/java-static/</id>
+    <published>2018-04-07T01:31:09.000Z</published>
+    <updated>2018-04-07T13:54:02.538Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;JAVA关键字之STATIC用法&amp;amp;总结&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程" scheme="http://blog.wi1024.com/source/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="JAVA" scheme="http://blog.wi1024.com/source/tags/JAVA/"/>
+    
+  </entry>
   
   <entry>
     <title>elasticsearch集群原理</title>
@@ -34,27 +97,6 @@
     
     
       <category term="ElasticSearch" scheme="http://blog.wi1024.com/source/tags/ElasticSearch/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>本地缓存实现总结</title>
-    <link href="http://blog.wi1024.com/2018/03/18/local_cache/"/>
-    <id>http://blog.wi1024.com/2018/03/18/local_cache/</id>
-    <published>2018-03-18T04:03:58.000Z</published>
-    <updated>2018-04-02T15:06:56.812Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;&lt;p&gt;在软件系统基础架构中，缓存已经成为了一个非常重要的部分，随着历年存储成本的不断下降，基于硬件资源换取系统性能成为了一种『简单粗暴』、但成效显著的方案。&lt;br&gt;在很多的大型分布式系统中，为了满足业务、性能上的各种要求，往往采用多级缓存的设计，来更好的满足不断增长的业务需求。在JAVA领域中，Guava本地缓存是一种比较主流、广泛应用的方案。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="缓存" scheme="http://blog.wi1024.com/source/categories/%E7%BC%93%E5%AD%98/"/>
-    
-    
-      <category term="JAVA" scheme="http://blog.wi1024.com/source/tags/JAVA/"/>
     
   </entry>
   
