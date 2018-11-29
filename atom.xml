@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.wi1024.com/"/>
-  <updated>2018-04-11T15:01:24.537Z</updated>
+  <updated>2018-11-29T13:22:49.290Z</updated>
   <id>http://blog.wi1024.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018学习清单</title>
+    <link href="http://blog.wi1024.com/2018/11/29/timeline/"/>
+    <id>http://blog.wi1024.com/2018/11/29/timeline/</id>
+    <published>2018-11-29T12:31:47.000Z</published>
+    <updated>2018-11-29T13:22:49.290Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;业精于勤，荒于嬉；行成于思，毁于随。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程" scheme="http://blog.wi1024.com/source/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="timeline" scheme="http://blog.wi1024.com/source/tags/timeline/"/>
+    
+  </entry>
   
   <entry>
     <title>【JAVA回顾】volatile关键字分析</title>
